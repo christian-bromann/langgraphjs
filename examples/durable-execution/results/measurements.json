@@ -1,0 +1,125 @@
+{
+  "graphSyncKill": {
+    "mode": "graph-sync-resume",
+    "effects": [
+      "charge",
+      "reserve",
+      "ship-enter",
+      "ship:graph"
+    ],
+    "ok": true,
+    "resumedWith": "null",
+    "result": {
+      "orderId": "o-1",
+      "charged": true,
+      "reserved": true,
+      "shipped": true
+    },
+    "next": []
+  },
+  "graphExitKill": {
+    "mode": "graph-exit-resume",
+    "effects": [
+      "charge",
+      "reserve",
+      "ship-enter",
+      "charge",
+      "reserve",
+      "ship:graph"
+    ],
+    "ok": true,
+    "resumedWith": "fresh-input",
+    "nullError": "Received no input writes for \"__start__\"",
+    "result": {
+      "orderId": "o-1",
+      "charged": true,
+      "reserved": true,
+      "shipped": true
+    }
+  },
+  "observedBeforeDurable": {
+    "startedAtReturn": 0,
+    "finishedAtReturn": 0
+  },
+  "funcSyncKill": {
+    "mode": "func-sync-resume",
+    "effects": [
+      "glue",
+      "charge",
+      "glue-between",
+      "reserve",
+      "ship-enter",
+      "glue",
+      "glue-between",
+      "reserve",
+      "ship:func"
+    ],
+    "ok": true,
+    "resumedWith": "null",
+    "result": {
+      "charged": "charged:o-1",
+      "reserved": "reserved:charged:o-1",
+      "shipped": "shipped:reserved:charged:o-1"
+    }
+  },
+  "funcSyncKillImmediate": {
+    "mode": "func-sync-resume",
+    "effects": [
+      "glue",
+      "charge",
+      "glue-between",
+      "reserve-enter",
+      "glue",
+      "charge",
+      "glue-between",
+      "reserve",
+      "ship:func"
+    ],
+    "ok": true,
+    "resumedWith": "null",
+    "result": {
+      "charged": "charged:o-1",
+      "reserved": "reserved:charged:o-1",
+      "shipped": "shipped:reserved:charged:o-1"
+    }
+  },
+  "funcImmediateChargeRuns": 2,
+  "checkpointBytes": {
+    "steps": 20,
+    "payloadChars": 1500,
+    "fullFoot": {
+      "checkpoints": 22,
+      "writeGroups": 21,
+      "bytes": 362120
+    },
+    "deltaFoot": {
+      "checkpoints": 22,
+      "writeGroups": 21,
+      "bytes": 46833
+    }
+  },
+  "subgraph": {
+    "owned": [
+      "own:charge",
+      "own:reserve",
+      "own:ship",
+      "own:ship"
+    ],
+    "inherited": [
+      "inherit:charge",
+      "inherit:reserve",
+      "inherit:ship",
+      "inherit:ship"
+    ]
+  },
+  "inheritedReserveRuns": 1,
+  "callIndex": {
+    "edited": {
+      "second": "receipt:order-1"
+    },
+    "effects": [
+      "pay:order-1",
+      "pay:order-2"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@examples/durable-execution",
+  "private": true,
+  "type": "module",
+  "description": "Proof-of-concept: can LangGraph.js run Temporal-style durable code?",
+  "scripts": {
+    "test": "vitest run",
+    "poc": "vitest run"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.1.48",
+    "@langchain/langgraph": "workspace:*",
+    "@langchain/langgraph-checkpoint": "workspace:*",
+    "@langchain/protocol": "^0.0.19",
+    "@standard-schema/spec": "1.1.0",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.3",
+    "vitest": "^4.1.11"
+  }
+}
