@@ -59,6 +59,16 @@ While LangGraph can be used standalone, it also integrates seamlessly with any L
 - [API Reference](https://reference.langchain.com/javascript/langchain-langgraph): Detailed reference on core classes, methods, how to use the graph and checkpointing APIs, and higher-level prebuilt components.
 - [Built with LangGraph](https://www.langchain.com/built-with-langgraph): Hear how industry leaders use LangGraph to ship powerful, production-ready AI applications.
 
+## Sponsors
+
+### Bronze
+
+<p>
+  <a href="https://www.rapidproxy.io/" target="_blank" title="Rapidproxy">
+    <img alt="Rapidproxy" src="https://raw.githubusercontent.com/langchain-ai/langgraphjs/HEAD/.github/images/sponsors/rapidproxy.png" height="56">
+  </a>
+</p>
+
 ## Acknowledgements
 
 LangGraph is inspired by [Pregel](https://research.google/pubs/pub37252/) and [Apache Beam](https://beam.apache.org/). The public interface draws inspiration from [NetworkX](https://networkx.org/documentation/latest/). LangGraph is built by LangChain Inc, the creators of LangChain, but can be used without LangChain.
