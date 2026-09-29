@@ -65,7 +65,7 @@ While LangGraph can be used standalone, it also integrates seamlessly with any L
 
 <p>
   <a href="https://www.rapidproxy.io/" target="_blank" title="Rapidproxy">
-    <img alt="Rapidproxy" src="../../.github/images/sponsors/rapidproxy.png" height="56">
+    <img alt="Rapidproxy" src=".github/images/sponsors/rapidproxy.png" height="56">
   </a>
 </p>
 
